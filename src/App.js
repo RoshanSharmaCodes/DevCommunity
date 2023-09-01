@@ -4,12 +4,11 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Project is Deployed on Vercel</h1>
-      <h2>Rishabh, there is 90% Chance that this project is going to fail</h2>
-      <h2>But Let's keep trying may be this could result into something big</h2>
-      <h2>If Not Then As a Developer we will learn alot</h2>
+      <h1>My first venture</h1>
+      <h2>I know there is 90% Chance that this project is going to fail</h2>
+      <h2>But we will give our best to reverse the above percentage.</h2>
       <h2> So Bhagwan ka Naam leke shuru karte hain</h2>
-      <h2> All the best Bro</h2>
+      <h2> Jai Mata Di </h2>
     </div>
   );
 }
