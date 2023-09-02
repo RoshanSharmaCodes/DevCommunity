@@ -1,0 +1,35 @@
+.navbarContainer{
+    box-shadow: 0px 3px 3px 0px rgba(199,199,199,1);
+}
+
+.navbarMain{
+    height: 70px;
+    display: flex;
+}
+
+.navbarLogo{
+    flex: 3;
+}
+
+.navbarButtons{
+    flex:7;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.navbarButtons a{
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbarButtons a:hover{
+    border-bottom: 3px solid #0099ff;
+    color: #0099ff;
+}
