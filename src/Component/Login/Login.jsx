@@ -1,12 +1,15 @@
-import React from 'react'
+import React from "react"
 import "./Login.css"
+import LoginCard from "./LoginCard/LoginCard"
 
 const Login = () => {
   return (
-    <div>
-      
+    <div className="loginContainer">
+      <div className="loginMain">
+        <LoginCard />
+      </div>
     </div>
   )
 }
 
-export default Login;
+export default Login
