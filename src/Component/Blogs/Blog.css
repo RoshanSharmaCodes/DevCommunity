@@ -7,12 +7,33 @@
 }
 
 .blogHeader span:nth-child(1){
-    font-size: 90px;
+    font-size: 5.9rem;
     font-weight: 500;
     color: #0099ff;
 }
 
 .blogHeader span:nth-child(2){
-    font-size: 90px;
+    font-size: 5.9rem;
     font-weight: 500;
+}
+
+.blueDash{
+    background-color: #0099ff;
+    height: 10px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.blogBody{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.blogSearchBar{
+    width: 100px;
 }
