@@ -1,0 +1,18 @@
+.blogContainer{
+    background-color: white;
+}
+
+.blogMain{
+    margin: 0 5%;
+}
+
+.blogHeader span:nth-child(1){
+    font-size: 90px;
+    font-weight: 500;
+    color: #0099ff;
+}
+
+.blogHeader span:nth-child(2){
+    font-size: 90px;
+    font-weight: 500;
+}
