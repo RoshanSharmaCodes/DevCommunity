@@ -4,3 +4,40 @@
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.loginCardMain{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.loginDesign{
+    flex:5;
+    height: 100%;
+    background-color: cyan;
+}
+
+.loginForm{
+    flex:6;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loginOptions{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.loginIcons{
+    width: 70px;
+    height: 70px;
+}
+
+.loginIcons:hover{
+    width: 70px;
+    height: 70px;
+    fill: #0099ff;
+}
