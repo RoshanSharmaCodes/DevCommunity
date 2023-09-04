@@ -1,9 +1,7 @@
 import React from "react"
 import "./LoginCard.css"
 import { Button, Form, Input, Divider } from "antd"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {  } from "@fortawesome/free-solid-svg-icons"
-import {FaGithubSquare, FaGooglePlusSquare, FaLinkedinIn} from "react-icons/fa"
+import {FaGithubSquare, FaGooglePlusSquare, FaTwitterSquare} from "react-icons/fa"
 
 const LoginCard = () => {
   const FormSubmit = () => {
@@ -25,7 +23,7 @@ const LoginCard = () => {
               span: 16,
             }}
             style={{
-              maxWidth: 600,
+              width: 400,
             }}
             initialValues={{
               remember: true,
@@ -35,8 +33,9 @@ const LoginCard = () => {
             autoComplete="off"
           >
             <Form.Item
-              label="Username"
+              label=""
               name="username"
+              style={{width: 600, height: 50}}
               rules={[
                 {
                   required: true,
@@ -45,11 +44,11 @@ const LoginCard = () => {
               ]}
               hasFeedback
             >
-              <Input />
+              <Input placeholder="Enter Username..."  className="loginFields"/>
             </Form.Item>
 
             <Form.Item
-              label="Password"
+              label=""
               name="password"
               rules={[
                 {
@@ -57,19 +56,17 @@ const LoginCard = () => {
                   message: "Please type your password!",
                 },
               ]}
+              style={{width:600}}
               hasFeedback
             >
-              <Input.Password />
+              <Input.Password placeholder="Enter Password..." className="loginFields"/>
             </Form.Item>
 
             <Form.Item
-              wrapperCol={{
-                offset: 8,
-                span: 16,
-              }}
+              style={{width:600}}
             >
-              <Button type="primary" htmlType="submit">
-                Submit
+              <Button type="primary" htmlType="submit" className="loginFields" >
+                Login
               </Button>
             </Form.Item>
           </Form>
@@ -78,6 +75,7 @@ const LoginCard = () => {
           <div className="loginOptions">
               <FaGooglePlusSquare className="loginIcons"/>
               <FaGithubSquare className="loginIcons"/>
+              <FaTwitterSquare className="loginIcons"/>
           </div>
         </div>
       </div>
