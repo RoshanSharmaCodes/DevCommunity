@@ -37,6 +37,7 @@
 
 .signupForm {
   height: 36.1rem;
+  width: 90%;
   justify-content: center;
   align-items: center;
   flex-direction: column;

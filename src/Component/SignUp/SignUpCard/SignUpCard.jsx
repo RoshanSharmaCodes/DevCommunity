@@ -1,5 +1,6 @@
 import React from "react"
 import "./SignUpCard.css"
+import SignUpMentor from "./SignUpMentor/SignUpMentor"
 
 const SignUpCard = () => {
   return (
@@ -19,7 +20,7 @@ const SignUpCard = () => {
             </div>  
           </div>
           <div className="signupForm">
-            
+            <SignUpMentor />
           </div>
         </div>   
       </div>
