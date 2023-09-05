@@ -1,7 +1,17 @@
 import React from 'react'
-import { Form, Button, DatePicker, Input, Select } from 'antd'
+import { Form, Button, DatePicker, Input, Select, Upload } from 'antd'
+import { PlusOutlined } from '@ant-design/icons';
 
 const SignUpMentor = () => {
+
+  const normFile = (e) => {
+    if (Array.isArray(e)) {
+      return e;
+    }
+    return e?.fileList;
+  };
+
+
   return (
     <div>
       <Form labelCol={{ span: 10}} >
@@ -91,6 +101,15 @@ const SignUpMentor = () => {
                 { type: 'url', warningOnly: true }, 
                 { type: 'string', min: 6 }]}>
             <Input placeholder="Portfolio/LinkedIn/Twitter" />
+        </Form.Item>
+
+        <Form.Item label="Profile Picture" valuePropName="fileList" getValueFromEvent={normFile}>
+          <Upload action="/upload.do" listType="picture-card">
+            <div>
+              <PlusOutlined />
+              <div style={{ marginTop: 8 }}>Upload</div>
+            </div>
+          </Upload>
         </Form.Item>
 
         <Form.Item className='submit'>

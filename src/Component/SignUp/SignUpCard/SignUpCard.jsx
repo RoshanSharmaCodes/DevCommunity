@@ -1,6 +1,7 @@
 import React from "react"
 import "./SignUpCard.css"
 import SignUpMentor from "./SignUpMentor/SignUpMentor"
+import SignUpCandidate from "./SignUpCandidate/SignUpCandidate"
 
 const SignUpCard = () => {
   return (
