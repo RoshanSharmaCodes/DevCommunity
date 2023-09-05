@@ -13,7 +13,6 @@ const SignUpCard = () => {
     <div className="signupCardContainer">
       <div className="signupCardMain">
         <div className="signupDesign">
-          <img className='interview' alt="interviewimage" src="assets/images/interview.svg" />
         </div>
         <div className="signupArea">
           <div className="signupForm">
@@ -48,9 +47,9 @@ const SignUpCard = () => {
               style={{width:600}}
               hasFeedback
               >
-              <Select className="signupFields" placeholder="Join as">
-                <Select.Option value='mentor'>Mentor</Select.Option>
-                <Select.Option value='candidate'>Candidate</Select.Option>
+              <Select className="signupFields" defaultValue={"Student"} placeholder="Join as">
+                <Select.Option value='Mentor'>Mentor</Select.Option>
+                <Select.Option value='Student'>Student</Select.Option>
               </Select>
             </Form.Item>
 
