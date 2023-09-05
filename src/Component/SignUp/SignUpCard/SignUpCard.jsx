@@ -48,7 +48,7 @@ const SignUpCard = () => {
               style={{width:600}}
               hasFeedback
               >
-              <Select placeholder="Join as">
+              <Select className="signupFields" placeholder="Join as">
                 <Select.Option value='mentor'>Mentor</Select.Option>
                 <Select.Option value='candidate'>Candidate</Select.Option>
               </Select>
@@ -66,7 +66,7 @@ const SignUpCard = () => {
               style={{width:600}}
               hasFeedback
             >
-              <Input placeholder="Enter Username..."  />
+              <Input className="signupFields" placeholder="Enter Username..."  />
             </Form.Item>
 
 
@@ -83,7 +83,7 @@ const SignUpCard = () => {
               style={{width:600}}
               hasFeedback
             >
-            <Input.Password placeholder='Type your password'/>
+            <Input.Password className="signupFields" placeholder='Type your password'/>
         </Form.Item>
 
         <Form.Item 
@@ -99,13 +99,13 @@ const SignUpCard = () => {
               style={{width:600}}
               hasFeedback
               >
-            <Input.Password block placeholder='Confirm your password'/>
+            <Input.Password className="signupFields" placeholder='Confirm your password'/>
         </Form.Item>
 
             <Form.Item
               style={{width:600}}
             >
-              <Button block type="primary" htmlType="submit" >
+              <Button className="signupFields" block type="primary" htmlType="submit" >
                 Sign Up
               </Button>
             </Form.Item>

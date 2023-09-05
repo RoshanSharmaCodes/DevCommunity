@@ -45,3 +45,8 @@
   height: 70px;
   fill: #0099ff;
 }
+
+.signupFields {
+  height: 40px;
+  width: 100%;
+}
